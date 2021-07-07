@@ -50,8 +50,8 @@ FROM customer
 WHERE store_id = 1 AND last_name LIKE '%es';
 --13 CUSTOMERS--
 
---Question 9--
-SELECT COUNT(amount), amount
+Q#9 How many payment amounts (4.99, 5.99, etc.) had a number of rentals above 250 for customers with ids between 380 and 430? (use group by and having > 250)--
+SELECT COUNT(amount)
 FROM payment
 WHERE customer_id BETWEEN 380 AND 430
 --stuck--
